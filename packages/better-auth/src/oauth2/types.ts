@@ -30,9 +30,9 @@ export interface OAuthProvider<
 		user: {
 			id: string;
 			name?: string;
-			email?: string | null;
+			email?: string | null | undefined;
 			image?: string;
-			emailVerified? = false: boolean;
+			emailVerified?: boolean | null | undefined;
 		};
 		data: T;
 	} | null>;
