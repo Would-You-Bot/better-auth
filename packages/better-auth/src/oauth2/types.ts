@@ -32,7 +32,7 @@ export interface OAuthProvider<
 			name?: string;
 			email?: string | null;
 			image?: string;
-			emailVerified: boolean;
+			emailVerified? = false: boolean;
 		};
 		data: T;
 	} | null>;
